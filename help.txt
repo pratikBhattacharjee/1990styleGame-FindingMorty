@@ -1,0 +1,33 @@
+Features:
+Chest - Contains either space keys/weapons(rare)/empty.
+Power Chest - Contains weapons/Equipments like Lightsaber/Portal Gun/Gas Mask.
+Magic Doors - Directly takes you to the next galaxy.
+Equipment Shops - Can buy weapons/equipment using space keys.
+
+Weapons/Equipment: Every equipment/weapon has a passcode which needs to be typed by the player within 5 seconds in order to use it.The weapon/equipment available are:
+Gas Mask: Helps you pass through gas planets.
+Lightsaber: Kills aliens
+Portalgun: takes you to the next safe planet.
+
+Dangers:
+Gas Planet: Poisonous Gas that can kill Rick.
+Planets with Aliens: Powerful Aliens that can kill Rick.
+
+Commands:
+look front: looks front
+look back: looks back
+look right: looks right
+look left: looks left
+open chest: opens the chest you are facing
+open door: open door to the next planet
+use gun: uses portal gun to move to the next safe planet
+use mask: uses the gas mask to protect you against gas planets
+use sword: uses the lightsaber to kill enemy aliens
+use keys: uses keys to buy weapons
+see bag: see the weapon/equipment and space keys you have.
+
+
+How to Win:
+Pass all obstacles and move through the path with your wit to kill enemy aliens and find grandson Morty.
+
+*******-----------------------*******
