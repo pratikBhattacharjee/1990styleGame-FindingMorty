@@ -1,0 +1,10 @@
+*******-----------------------*******
+Welcome to play Finding Morty!!
+
+You are Rick. The smartest scientist in the world. You are known all over the galaxy for you interdimensional travel
+and throughout your exploration and adventures you have made thousands of enemies. Your most recent enemy has kidnapped your grandson
+Morty. You found out he is somewhere in a planet in a far away galaxy, move from planets to planets and galaxies to save your grandson.
+
+IT'S TIME TO SAVE MORTY!!!"
+(type 'help' to learn about the game)
+*******-----------------------*******
