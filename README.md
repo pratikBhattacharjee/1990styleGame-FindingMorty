@@ -12,34 +12,39 @@ Basic Information:
     We would like to design our own game called Finding Morty. It’s a text-based game where the player, who plays as a mega-genius scientist called Rick, has to overcome certain obstacles to find his missing grandson Morty, who has been kidnapped by an evil alien.
 
 Description: 
-    The Scientist Rick has to move from planet to planet and eventually galaxies to find his grandson Morty.The level of difficulty can be chosen by the player, Easy( 5 galaxies ), Medium (7 galaxies) and Hard ( 9 galaxies). The player can look in all four directions by using commands, and can find chest,power chest, magic doors, equipment shops.
+    The Scientist Rick has to move from planet to planet and eventually galaxies to find his grandson Morty.The level of difficulty can be chosen by the player, Easy, Medium and Hard . The player can navigate by using text commands. 
+
+Level of difficulty:(determines the time you get to save yourself from danger.)
+    1. Easy - 20 seconds
+    2. Medium - 15 seconds
+    3. Hard - 10 seconds
+
 
     Features: 
+    
+    Accessible Items:
     Chest - Contains either space keys/weapons(rare)/empty.
     Power Chest - Contains weapons/Equipments like Lightsaber/Portal Gun/Gas Mask.
-    Magic Doors - Directly takes you to the next galaxy.
-    Equipment Shops - Can buy weapons/equipment using space keys.
+    Galaxy Stores - Can buy weapons/equipment using space keys.
     
-    Weapons/Equipment: Every equipment/weapon has a passcode which needs to be typed by the player within 5 seconds in order to use it.The weapon/equipment available are:
+    Weapons/Equipment: 
+    (Every equipment/weapon has a passcode which needs to be typed by the player within limited time seconds in order to use it.)The weapon/equipment available are:
     Gas Mask: Helps you pass through gas planets.
     Lightsaber: Kills aliens
-    Portalgun: takes you to the next safe planet.
+    Portalgun: takes you to the next planet.
 
     Dangers: 
     Gas Planet: Poisonous Gas that can kill Rick.
     Planets with Aliens: Powerful Aliens that can kill Rick.
+    
 
     Commands:
-    look front: looks front
-    look back: looks back
-    look right: looks right
-    look left: looks left
     open chest: opens the chest you are facing
-    open door: open door to the next planet
-    use gun: uses portal gun to move to the next safe planet
-    use mask: uses the gas mask to protect you against gas planets
-    use sword: uses the lightsaber to kill enemy aliens
-    use keys: uses keys to buy weapons
+    use portal: move to the next planet
+    use portal gun: uses portal gun to move to the next planet
+    use gas mask: uses the gas mask to protect you against gas planets
+    use light saber: uses the lightsaber to kill enemy aliens
+    use store: uses keys to buy weapons from galaxy store
     see bag: see the weapon/equipment and space keys you have.
 
 
@@ -62,5 +67,5 @@ Description:
         4)File input/output : Every player will have a seperate file in which their records and previous unfinished game status will be stored.
         5)Multiple file code - Every key feature of this game will be coded in seperate files for better management of the whole code.
  
-
+ Academy server used for creating/testing game: Academy Server 21
 
