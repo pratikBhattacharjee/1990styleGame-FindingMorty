@@ -67,6 +67,8 @@ Level of difficulty:(determines the time you get to save yourself from danger.)
         4)Dynamic Memory Management - The player attributes such as weapons and the list of locations in the map are handled through vectors as they change in length due to                random map creation.
         5)File input/output : This is an adventure game where player is provided with a lot of messages to navigate. Most messages are taken as input from external text file to            keep the code clean and easy to handle.
         6)Multiple file code - Every key feature of this game will be coded in 6 seperate c++ files and there are text files for messages, and header files and makefile to run             the game as a whole
+
+ Special feature: The player has to save himself from danger within limited time. This makes the game more intense and cheating free.
  
  Quick Start-
  (Run code in linux terminal)
