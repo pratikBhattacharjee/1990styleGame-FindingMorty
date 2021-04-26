@@ -63,10 +63,10 @@ Level of difficulty:(determines the time you get to save yourself from danger.)
 
     Key Programming Features
         1)Generation of random events - This game generates a random path through the 2D array game every time the game is played. The key/passcode for every weapon is also               randomly generated. Chests/Power Chests are also placed randomly thoughout the map.
-        2)Data Strusture - We will be using 2D arrays for the map of the game. We will be using vectors for player atttributes as they change as the player progresses in the game.
-        4)Dynamic Memory Management - The player attributes such as weapons and the list of locations in the map are handled through vectors as they change in length due to random map creation.
-        5)File input/output : This is an adventure game where player is provided with a lot of messages to navigate. Most messages are taken as input from external text file to keep the code clean and easy to handle.
-        6)Multiple file code - Every key feature of this game will be coded in 6 seperate c++ files and there are text files for messages, and header files and makefile to run the game as a whole
+        2)Data Strusture - We will be using 2D arrays for the map of the game. We will be using vectors for player atttributes as they change as the player progresses in the               game.
+        4)Dynamic Memory Management - The player attributes such as weapons and the list of locations in the map are handled through vectors as they change in length due to                random map creation.
+        5)File input/output : This is an adventure game where player is provided with a lot of messages to navigate. Most messages are taken as input from external text file to            keep the code clean and easy to handle.
+        6)Multiple file code - Every key feature of this game will be coded in 6 seperate c++ files and there are text files for messages, and header files and makefile to run             the game as a whole
  
  Quick Start-
  (Run code in linux terminal)
