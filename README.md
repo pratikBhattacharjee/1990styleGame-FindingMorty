@@ -53,19 +53,26 @@ Level of difficulty:(determines the time you get to save yourself from danger.)
 
 
     Implementation:
-        1) The map of the game will be stored in a 2D array via Dynamic memory management.
-        2) The path from Rick starting position to Morty's position through the 2D array is going to be randomly generated.
-        3)The blocks in the array that do not represent the path, will contain chests/Power chests/Magic Doors/Equipment shops that the player can interact with or move to the             next block/planet in the path.
-        4)The user can type in the commands to navigate through the game.
-        5)The previous game data of a users can be stored in files to keep track of fastest time to solve the game and also game status.
-        6) All the key parts of the game structure and code will be written and tested in seperate files(eg. command input, Map creation, Weapon and Equipment features etc) and            linked together to complete this game.
+        1) The map of the game will be stored in a 2D array.
+        2) Player attributes such as weapons and their attributes were stored in vectors(dynamic memory management)
+        3) The path from Rick starting position to Morty's position through the 2D array is going to be randomly generated.
+        4)The blocks in the array that do not represent the path, will contain chests/Power chests/Magic Doors/Equipment shops that the player can interact with or move to the             next block/planet in the path.
+        5)The user can type in the commands to navigate through the game.
+        6)The player attributes change as the user collects spacekeys and weapons.
+        7) All the key parts of the game structure and code will be written and tested in seperate files(eg. command input, Map creation, Weapon and Equipment features etc) and            linked together to complete this game.
 
     Key Programming Features
-        1)Generation of random events - This game generates a random path through the 2D array game every time the game is played. The key/passcode for every weapon is also               randomly generated. Equipments/Weapons are also placed randomly thoughout the map.
-        2)Data Strusture - We will be using 2D arrays for the map of the game.
-        3)Dynamic Memory Management - The data structure in this game is managed by dynamic memory management.
-        4)File input/output : Every player will have a seperate file in which their records and previous unfinished game status will be stored.
-        5)Multiple file code - Every key feature of this game will be coded in seperate files for better management of the whole code.
+        1)Generation of random events - This game generates a random path through the 2D array game every time the game is played. The key/passcode for every weapon is also               randomly generated. Chests/Power Chests are also placed randomly thoughout the map.
+        2)Data Strusture - We will be using 2D arrays for the map of the game. We will be using vectors for player atttributes as they change as the player progresses in the game.
+        4)Dynamic Memory Management - The player attributes such as weapons and the list of locations in the map are handled through vectors as they change in length due to random map creation.
+        5)File input/output : This is an adventure game where player is provided with a lot of messages to navigate. Most messages are taken as input from external text file to keep the code clean and easy to handle.
+        6)Multiple file code - Every key feature of this game will be coded in 6 seperate c++ files and there are text files for messages, and header files and makefile to run the game as a whole
+ 
+ Quick Start-
+ (Run code in linux terminal)
+ To install the game- "make main"
+ To run the game - "./main"
+ 
  
  Academy server used for creating/testing game: Academy Server 21
 
