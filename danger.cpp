@@ -11,7 +11,7 @@ void dangerPicture(int danger){
     fin.open("poisonGas.txt");//for poisonGas
   }
   if (danger == 16){
-    fin.open("alienattack.txt");//for allien attack
+    fin.open("allienattack.txt");//for allien attack
   }
   while(getline(fin,line)){
     cout<<line<<endl;
