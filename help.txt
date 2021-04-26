@@ -10,7 +10,7 @@ Rule: Every equipment/weapon has a passcode which needs to be typed by the playe
 The weapon/equipment available are:
 Gas Mask: Helps you pass through gas planets.
 Lightsaber: Kills aliens
-Portalgun: takes you to the next planet.
+Portal gun: takes you to the next planet.
 
 Dangers:
 Gas Planet: Poisonous Gas that can kill Rick.
@@ -23,7 +23,7 @@ open power chest: opens power chest if available in the planet.
 use portal: transport to the next planet
 use portal gun: uses portal gun to move to the next safe planet
 use gas mask: uses the gas mask to protect you against gas planets
-use sword: uses the lightsaber to kill enemy aliens
+use light saber: uses the lightsaber to kill enemy aliens
 use store: access to galaxy store to buy weapons.
 see bag: see the weapon/equipment and space keys you have.
 
