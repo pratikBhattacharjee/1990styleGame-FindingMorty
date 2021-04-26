@@ -50,6 +50,7 @@ Level of difficulty:(determines the time you get to save yourself from danger.)
 
     How to Win:
     Pass all obstacles and move through the path with your wit to kill enemy aliens and find grandson Morty.
+    (This game is not easy, one needs strong memory and wit to win. Averge gameplay takes about 10 minutes.)
 
 
     Implementation:
@@ -72,7 +73,7 @@ Level of difficulty:(determines the time you get to save yourself from danger.)
  
  Quick Start-
  (Run code in linux terminal)
- To install the game- "make main"
+ To install the game- "make main" and then
  To run the game - "./main"
  
  
