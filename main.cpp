@@ -77,3 +77,69 @@ void createweapon(int val){
   cout<<"PassWord: "<<n.password<<endl;
   cout<<"****************"<<endl;
 }
+
+
+bool checkbag(string item){//check for item
+  vector<Weapon>::iterator iter;//iterator to loop through weapon vector
+  for(iter = weapons.begin();iter != weapons.end();iter++){
+    if((*iter).type == item){
+      return true;
+    }
+  }
+  return false;
+}
+bool useWeapon(int pass,string type){//using weapon
+  vector<Weapon>::iterator iter2;
+  for(iter2 = weapons.begin();iter2 != weapons.end();iter2++){
+    if((*iter2).type == type && (*iter2).password == pass){//matching password
+      (*iter2).type = "NULL";
+      return true;
+    }
+  }
+  return false;
+}
+//Read all locations from location text file and store locations in vectors
+void readLocation(){
+  string line = "";//To read each line
+  ifstream fin;
+  fin.open("location.txt");//open file to read
+  int count = 1;
+  while(getline(fin,line)){//read each line
+    if(count<=4){
+      galaxies.push_back(line);//adding to vector galaxies
+    }else{
+      planets.push_back(line);//adding to vector planets
+    }
+    count++;
+  }
+}
+//Printing location of player in the map.
+//Example: You are in Milky Way. Planet: Mars
+void printLocation(int row,int col){
+  cout<<"You are in ";
+  if(row>5){
+    cout<<galaxies[0]<<" Galaxy. ";
+    cout<<"Planet: ";
+    cout<<planets[col]<<"."<<endl;
+  }else{
+    if(row>3){
+      cout<<galaxies[1]<<" Galaxy. ";
+      cout<<"Planet: ";
+      cout<<planets[7+col]<<"."<<endl;
+    }else{
+      if(row>1){
+        cout<<galaxies[2]<<" Galaxy. ";
+        cout<<"Planet: ";
+        cout<<planets[14+col]<<"."<<endl;
+      }else{
+        cout<<galaxies[3]<<" Galaxy. ";
+        cout<<"Planet: ";
+        cout<<planets[21+col]<<"."<<endl;
+      }
+    }
+  }
+}
+
+//declaring functions
+void clearItem(int map[][8], Position Pos);
+void startPos(int map[][8], Position &pos);
