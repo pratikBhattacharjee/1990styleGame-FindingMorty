@@ -143,3 +143,90 @@ void printLocation(int row,int col){
 //declaring functions
 void clearItem(int map[][8], Position Pos);
 void startPos(int map[][8], Position &pos);
+
+//the mainfunction
+int main(){
+  welcomeMessage();//welcome message
+  //Enter name
+  cout<<endl;
+  string name = "";
+  cout<<"ENTER YOUR NAME: ";//Enter player name
+  cin>>name;
+  cout<<endl;
+
+  //setting difficulty
+  double timeAllowed = 0;
+  char difficulty = 'a';
+  while(true){
+  cout<<"DIFFICULTIES: (1)EASY (2)MEDIUM (3)HARD"<<endl;
+  cout<<"Enter Number: ";
+  cin>>difficulty;
+  if(difficulty == '1' || difficulty == '2' || difficulty == '3')
+    break;
+  }
+  if(difficulty =='1'){
+    timeAllowed = 20;//time allowed 20second
+    cout<<"YOU HAVE 20 seconds to save yourself from a danger!!"<<endl;
+  }
+  if(difficulty =='2'){
+    timeAllowed = 15;//time allowed 15 seconds
+    cout<<"YOU HAVE 15 seconds to save yourself from a danger!!"<<endl;
+  }
+  if(difficulty =='3'){
+    timeAllowed = 10;//time allowed 10 seconds
+    cout<<"YOU HAVE 10 seconds to save yourself from a danger!!"<<endl;
+  }
+  //map creation
+  int map[8][8] = {0};//initialising the map array
+  createmap(map);//creating the map
+  printmap(map);//For the purpose of checking the map
+
+  readLocation();//Read location from location file
+  //Creating variables for gameplay
+  bool alive = true;
+  bool mortyFound = false;
+  Position pos;//Player Position
+  Position findPos;//Position of search item
+  int spacekeys = 0;//space key count
+  int result = 0;
+  string command = "";//user command
+  int isdanger = 0;
+  int maxChance = 2;
+  int chances = 0;
+  int enterPassword = 0;
+  time_t dangerStart;//for storing time when danger start
+  time_t dangerEnd;//storing time when danger ends
+  time_t gameStart;//storing time when game starts
+  time_t gameEnd;//storing time when game ends
+  int diff = 0;//for storing time diff
+  bool itemFound = false;//check for item found
+
+  gameStart = time(NULL);
+  //player starting point
+  startPos(map, pos);//starting position
+  //print starting point
+  printLocation(pos.row,pos.col);
+
+  //checking items available in the planet
+  cout<<"Items Available: ";
+  findPos.row = 10;
+  findPos.col = 10;
+  itemFound = false;
+  fetchitem(map,pos,findPos, 10);//search for chest
+
+  if(findPos.row != 10 || findPos.col != 10){//If chest found!!
+    cout<<"CHEST ";
+    itemFound = true;
+  }
+  findPos.row = 10;
+  findPos.col = 10;
+  fetchitem(map,pos,findPos, 20);//search for power chest
+  if(findPos.row != 10 || findPos.col != 10){//If power chest found!!
+    cout<<"POWER CHEST ";
+    itemFound = true;
+  }
+  if(itemFound == false){
+    cout<<"NONE";
+  }
+  itemFound = false;
+  cout<<endl;
