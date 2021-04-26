@@ -178,7 +178,7 @@ int main(){
   //map creation
   int map[8][8] = {0};//initialising the map array
   createmap(map);//creating the map
-  printmap(map);//For the purpose of checking the map
+  //printmap(map);//Turning this comment into code is a cheat of the game
 
   readLocation();//Read location from location file
   //Creating variables for gameplay
