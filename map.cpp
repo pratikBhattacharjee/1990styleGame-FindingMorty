@@ -111,12 +111,12 @@ void createmap(int map[][8]){
 
   //Completing the map
   int randomNumber = 0;
-  for(int i = 1;i<=4;i++){
+  for(int i = 0;i<=4;i++){
     for(int j = 0;j< 8;j++){
       if (map[i][j] != 1 && map[i][j] != 16 && map[i][j] != 15){
         randomNumber = rand()%10;
         if(randomNumber == 9){
-          map[i][j] = 25;//This is equipment store
+          map[i][j] = 10;//This is equipment store
         }
         if (randomNumber > 5 && randomNumber<9)
           map[i][j] = 10;//Normal Chest
