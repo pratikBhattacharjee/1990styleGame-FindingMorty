@@ -9,7 +9,7 @@ Team members:
 Game Title: Finding Morty!
 
 Basic Information:
-    We would like to design our own game called Finding Morty. It’s a text-based game where the player, who plays as a mega-genius scientist called Rick, has to overcome certain obstacles to find his missing grandson Morty, who has been kidnapped by an evil alien.
+    We designed our own game called Finding Morty. It’s a text-based game where the player, who plays as a mega-genius scientist called Rick, has to overcome certain obstacles to find his missing grandson Morty, who has been kidnapped by an evil alien.
 
 Description: 
     The Scientist Rick has to move from planet to planet and eventually galaxies to find his grandson Morty.The level of difficulty can be chosen by the player, Easy, Medium and Hard . The player can navigate by using text commands. 
