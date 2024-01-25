@@ -1,15 +1,9 @@
 # ENGG1340-FindingMorty
-Group Number: 79
-Team members:
-1) Pratik Bhattacharjee UID: 3035767425
-2) Gurbaksh Kaur        UID: 3035781744
-
-
 
 Game Title: Finding Morty!
 
 Basic Information:
-    We designed our own game called Finding Morty. It’s a text-based game where the player, who plays as a mega-genius scientist called Rick, has to overcome certain obstacles to find his missing grandson Morty, who has been kidnapped by an evil alien.
+     It’s a text-based game where the player, who plays as a mega-genius scientist called Rick, has to overcome certain obstacles to find his missing grandson Morty, who has been kidnapped by an evil alien. We had a lot of fun making it, hope you like playing it!!
 
 Description: 
     The Scientist Rick has to move from planet to planet and eventually galaxies to find his grandson Morty.The level of difficulty can be chosen by the player, Easy, Medium and Hard . The player can navigate by using text commands. 
